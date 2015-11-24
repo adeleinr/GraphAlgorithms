@@ -27,12 +27,12 @@ public class Game{
 		System.out.println(Game.canWin(board,8)); // True
 	}
 	
-    /** 
+	/** 
 	  * Determines whether it is possible to win the game starting at start pos
 	  * 
 	  * @param  board array of board moves
-      * @param  start start index in the array 0 - board.length
-      * @return whether or not you can win the game starting at the given position
+	  * @param  start start index in the array 0 - board.length
+	  * @return whether or not you can win the game starting at the given position
 	*/  
 	public static boolean canWin(int[] board, int start){
 		
@@ -80,26 +80,26 @@ class PathFinder{
 	// Graph to find path in
 	private Digraph graph;
 		
-    /**
-     * Initializes arrays to be used for finding a path.
-     * 
-     * @param  graph Already built graph where we want to find a path
-     * @param  srcV target vertex
-     * @param  targetV target vertex
-     */
+	/**
+	 * Initializes arrays to be used for finding a path.
+	 * 
+	 * @param  graph Already built graph where we want to find a path
+	 * @param  srcV target vertex
+	 * @param  targetV target vertex
+	 */
 	public PathFinder(Digraph graph){
 		this.graph = graph;
 		int numVertices = graph.adj.length; 		
 	}
 	
-    /**
-     * Finds if there is a path from srcV to targetV.
-     * Probes the parent array to find if there is a path or not.
-     *
-     * @param  srcV source vertex
-     * @param  targetV target vertex
-     * @return whether there is path or not
-     */
+	/**
+	 * Finds if there is a path from srcV to targetV.
+	 * Probes the parent array to find if there is a path or not.
+	 *
+	 * @param  srcV source vertex
+	 * @param  targetV target vertex
+	 * @return whether there is path or not
+	 */
 	public boolean find(int srcV, int targetV){
 		if(srcV == targetV){
 			return true;
@@ -120,16 +120,16 @@ class PathFinder{
 		return parent[targetV] != -1;
 	}
 	
-    /**
-     * Does a depth first search and builds a path from srcV to targetV
-     * It fills the parent array with the vertex that serve as a path to targetV
-     *
-     * @param  srcV source vertex
-     * @param  targetV target vertex
-     * @param  marked array of visited vertices 
-     * @param  parent array of vertices in this path
-     * @return whether there is path or not
-     */
+	/**
+	 * Does a depth first search and builds a path from srcV to targetV
+	 * It fills the parent array with the vertex that serve as a path to targetV
+	 *
+	 * @param  srcV source vertex
+	 * @param  targetV target vertex
+	 * @param  marked array of visited vertices 
+	 * @param  parent array of vertices in this path
+	 * @return whether there is path or not
+	 */
 	private void buildPath(int srcV, int targetV,
 			boolean[] marked, int[] parent){
 		

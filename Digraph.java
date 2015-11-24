@@ -21,7 +21,7 @@ class Digraph {
 	// them while processing the vertices and there is no other way to deduce it.
 	protected int numEdges;
 
-    /**
+	/**
 	 * Created an empty adjacency array for storing the neighbors
 	 * of each vertex
 	 * 
@@ -34,18 +34,18 @@ class Digraph {
 		}
 	}
 	
-    /**
-     * Adds the directed edge v->w to this digraph.
-     *
-     * @param  v1 source vertex
-     * @param  v2 target vertex
-     */
+	/**
+	 * Adds the directed edge v->w to this digraph.
+	 *
+	 * @param  v1 source vertex
+	 * @param  v2 target vertex
+	 */
 	public void addEdge(int v1, int v2){
 		adj[v1].add(v2);
 		numEdges++;
 	}
 
-    /**
+	/**
 	 * Create a string representation of the graph
 	 * 
 	 * @return a string representing the graph
