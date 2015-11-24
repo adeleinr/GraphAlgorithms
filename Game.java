@@ -2,7 +2,7 @@ package GraphProblems;
 import java.util.*;
 
 
-/**  You’re given a board game which is a row of squares, each labeled with an
+/** You are given a board game which is a row of squares, each labeled with an
  *  integer. This can be represented by a list, e.g. [1, 3, 2, 0, 5, 2, 8, 4, 1]
  *  Given a start position on the board, you “win” by landing on a zero, where
  *  you move by jumping from square to square either left or right the number
