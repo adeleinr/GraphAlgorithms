@@ -1,4 +1,4 @@
-package GraphProblems;
+package graphprob;
 import java.util.*;
 
 
